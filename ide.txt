@@ -1,5 +1,33 @@
-Ide casemake:
+Ide casemake AX22-1
 
 Judul
 AXForAsset
+
+Halaman Login:
+•	1 buah Image Icon.									-> logo
+•	1 buah Text Field; terdapat validasi wajib diisi.		-> username
+•	1 buah Password Field; terdapat validasi wajib diisi.	-> password
+•	1 buah Button.										-> login
+•	1 buah validasi advanced (length, alphanumeric, dsb). 	-> validasi length pass >= 8
+•	Menyimpan data user untuk digunakan pada halaman lain. -> username
+
+Halaman Utama
+•	Menu item, prof, logout	-> [Flyout]
+•	Tab 						-> Terms, Conditions
+•	Image carousel			-> Asset banner
+•	Welcome message			-> Welcome, username
+
+Halaman Item
+•	Menu item, prof, logout	-> Menu biasa
+•	Repeater					-> Assets
+•	Btn ke halaman detail		-> [Store variable] [Pindah halaman]
+
+Halaman Detail
+•	Form dengan 2 komponen	-> Email (utk send asset), Payment method (Visa, Master card, paypal)
+•	1 buah validasi.			-> Email must be filled
+•	Dialog err message		-> Kalo validasi false
+•	Back btn ke halaman utama	-> Purchase [Mousedown]
+
+Halaman Profile
+•	Menu item, prof, logout	-> Menu biasa
 
