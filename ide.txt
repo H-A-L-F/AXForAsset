@@ -29,7 +29,7 @@ Halaman Detail
 •	Back btn ke halaman utama	-> Purchase [Mousedown]	[v]
 
 Halaman Profile
-•	Menu item, prof, logout	-> Menu biasa			[]
+•	Menu item, prof, logout	-> Menu biasa			[v]
 
 Color palette:
 •	#393E46
