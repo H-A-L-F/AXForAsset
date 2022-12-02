@@ -18,14 +18,14 @@ Halaman Utama
 •	Welcome message			-> Welcome, username	[v]
 
 Halaman Item
-•	Menu utama, prof, logout	-> Menu biasa						[]
-•	Repeater					-> Assets							[]
-•	Btn ke halaman detail		-> [Store variable] [Pindah halaman]	[]
+•	Menu utama, prof, logout	-> Menu biasa						[v]
+•	Repeater					-> Assets							[v]
+•	Btn ke halaman detail		-> [Store variable] [Pindah halaman]	[v]
 
 Halaman Detail
 •	Form dengan 2 komponen	-> Email (utk send asset), Payment method (Visa, Master card, paypal)
-•	1 buah validasi.			-> Email must be filled	[]
-•	Dialog err message		-> Kalo validasi false	[]
+•	1 buah validasi.			-> Email must be filled	[v]
+•	Dialog err message		-> Kalo validasi false	[v]
 •	Back btn ke halaman utama	-> Purchase [Mousedown]	[]
 
 Halaman Profile
