@@ -18,7 +18,7 @@ Halaman Utama
 •	Welcome message			-> Welcome, username	[v]
 
 Halaman Item
-•	Menu item, prof, logout	-> Menu biasa						[]
+•	Menu utama, prof, logout	-> Menu biasa						[]
 •	Repeater					-> Assets							[]
 •	Btn ke halaman detail		-> [Store variable] [Pindah halaman]	[]
 
