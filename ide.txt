@@ -26,7 +26,7 @@ Halaman Detail
 •	Form dengan 2 komponen	-> Email (utk send asset), Payment method (Visa, Master card, paypal)
 •	1 buah validasi.			-> Email must be filled	[v]
 •	Dialog err message		-> Kalo validasi false	[v]
-•	Back btn ke halaman utama	-> Purchase [Mousedown]	[]
+•	Back btn ke halaman utama	-> Purchase [Mousedown]	[v]
 
 Halaman Profile
 •	Menu item, prof, logout	-> Menu biasa			[]
