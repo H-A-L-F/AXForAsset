@@ -4,12 +4,15 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.example.axforasset.databinding.ActivityLoginBinding
 import com.example.axforasset.parcel.User
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
+
+    private lateinit var alertDialogBuilder: AlertDialog.Builder
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,11 +35,21 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun validateLogin(uname: String, pass: String): Boolean {
+        alertDialogBuilder = AlertDialog.Builder(this)
+
         if(uname.isBlank() || pass.isBlank()) {
-            Toast.makeText(this, "Please fill all the fields!", Toast.LENGTH_SHORT).show()
+            alertDialogBuilder.setMessage("Please fill all the fields!")
+                .setPositiveButton("Ok") {dialogInterface, it ->
+                    dialogInterface.dismiss()
+                }
+                .show()
             return false
         } else if(pass.length < 8) {
-            Toast.makeText(this, "Password length must be at least 8", Toast.LENGTH_SHORT).show()
+            alertDialogBuilder.setMessage("Password length must be at least 8")
+                .setPositiveButton("Ok") {dialogInterface, it ->
+                    dialogInterface.dismiss()
+                }
+                .show()
             return false
         }
         return true
