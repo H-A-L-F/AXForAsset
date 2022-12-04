@@ -24,7 +24,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/unameHint"
         android:inputType="text"
-        android:autofillHints="username" />
+        android:autofillHints="username"
+        android:id="@+id/unameEt"/>
 
     <Space
         android:layout_width="0dp"
@@ -35,7 +36,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/passHint"
         android:inputType="textPassword"
-        android:autofillHints="password" />
+        android:autofillHints="password"
+        android:id="@+id/passEt"/>
 
     <Space
         android:layout_width="0dp"
@@ -45,6 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login_hint"
-        android:layout_gravity="end|"/>
+        android:layout_gravity="end|"
+        android:id="@+id/loginBtn"/>
 
 </LinearLayout>
