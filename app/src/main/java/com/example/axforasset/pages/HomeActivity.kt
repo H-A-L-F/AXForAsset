@@ -21,7 +21,7 @@ class HomeActivity : AppCompatActivity() {
 
         val user: User = intent.getParcelableExtra("user")!!
 
-        supportActionBar?.setTitle(user.username)
+        supportActionBar?.title = "Hi, " + user.username
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
