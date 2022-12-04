@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AXForAsset">
         <activity
+            android:name=".pages.HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".pages.LoginActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,9 +23,7 @@
         </activity>
         <activity
             android:name=".pages.MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

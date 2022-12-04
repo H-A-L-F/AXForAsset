@@ -1,8 +1,10 @@
 package com.example.axforasset.pages
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.axforasset.databinding.ActivityLoginBinding
+import com.example.axforasset.parcel.User
 
 class LoginActivity : AppCompatActivity() {
 
