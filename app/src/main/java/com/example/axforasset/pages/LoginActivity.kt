@@ -1,8 +1,10 @@
 package com.example.axforasset.pages
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.axforasset.databinding.ActivityLoginBinding
+import com.example.axforasset.parcel.User
 
 class LoginActivity : AppCompatActivity() {
 
@@ -14,10 +16,12 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.loginBtn.setOnClickListener {
-            val uname = binding.unameEt.text.toString();
-            val pass = binding.passEt.text.toString();
+            val uname = binding.unameEt.text.toString()
+            val pass = binding.passEt.text.toString()
 
+            val User = User(uname, pass)
 
+            intent = Intent(this, )
         }
 
     }

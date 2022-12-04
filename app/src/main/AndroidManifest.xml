@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AXForAsset">
         <activity
+            android:name=".pages.HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.AXForAsset.NoActionBar" />
+        <activity
             android:name=".pages.LoginActivity"
             android:exported="false" />
         <activity
