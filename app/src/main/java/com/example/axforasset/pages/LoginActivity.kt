@@ -19,9 +19,11 @@ class LoginActivity : AppCompatActivity() {
             val uname = binding.unameEt.text.toString()
             val pass = binding.passEt.text.toString()
 
-            val User = User(uname, pass)
+            val user: User = User(uname, pass)
 
-            intent = Intent(this, )
+            intent = Intent(this, HomeActivity::class.java)
+            intent.putExtra("user", user)
+            startActivity(intent)
         }
 
     }

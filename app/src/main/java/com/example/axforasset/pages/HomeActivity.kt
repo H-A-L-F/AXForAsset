@@ -8,6 +8,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.axforasset.R
+import com.example.axforasset.databinding.ActivityHomeBinding
 import com.example.axforasset.pages.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
