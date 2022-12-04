@@ -2,4 +2,5 @@
     <string name="app_name">AXForAsset</string>
     <string name="unameHint">Username</string>
     <string name="passHint">Password</string>
+    <string name="login_hint">Login</string>
 </resources>

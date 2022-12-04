@@ -6,11 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:gravity="center"
+    android:paddingHorizontal="40dp">
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="80dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -19,11 +26,25 @@
         android:inputType="text"
         android:autofillHints="username" />
 
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/passHint"
         android:inputType="textPassword"
         android:autofillHints="password" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_hint"
+        android:layout_gravity="end|"/>
 
 </LinearLayout>
