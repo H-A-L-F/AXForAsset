@@ -3,4 +3,7 @@
     <string name="unameHint">Username</string>
     <string name="passHint">Password</string>
     <string name="login_hint">Login</string>
+    <string name="profile_menu">Profile</string>
+    <string name="item_menu">Item</string>
+    <string name="logout_menu">Logout</string>
 </resources>
