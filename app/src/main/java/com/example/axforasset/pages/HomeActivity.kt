@@ -56,7 +56,7 @@ class HomeActivity : AppCompatActivity() {
                     tab.text = "Conditions"
                 }
             }
-        }
+        }.attach()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

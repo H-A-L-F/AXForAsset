@@ -13,7 +13,7 @@ Halaman Login:
 
 Halaman Utama
 •	Menu item, prof, logout	-> [Flyout]			[v]
-•	Tab 						-> Terms, Conditions	[]
+•	Tab 						-> Terms, Conditions	[v]
 •	Image carousel			-> Asset banner		[v]
 •	Welcome message			-> Welcome, username	[v]
 

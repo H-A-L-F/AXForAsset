@@ -32,12 +32,21 @@
 
     <Space
         android:layout_width="0dp"
-        android:layout_height="20dp" />
+        android:layout_height="40dp" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tncTl"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/colPrimaryContent"
+        android:background="@drawable/primary_rounded_corner"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:scrollIndicators="none"/>
+    
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
     
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/tncVp"
