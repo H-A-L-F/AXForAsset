@@ -12,16 +12,11 @@
     <Space
         android:layout_width="0dp"
         android:layout_height="40dp" />
-
-    <com.synnapps.carouselview.CarouselView
-        android:id="@+id/carouselView"
+    
+    <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:fillColor="#FFFFFFFF"
-        app:pageColor="#00000000"
-        app:radius="6dp"
-        app:slideInterval="3000"
-        app:strokeColor="#FF777777"
-        app:strokeWidth="1dp"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/carouselRecyclerview"/>
+
 
 </LinearLayout>
