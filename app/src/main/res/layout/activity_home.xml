@@ -7,16 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".pages.HomeActivity"
     android:orientation="vertical"
-    android:paddingHorizontal="40dp">
+    android:paddingHorizontal="40dp"
+    android:gravity="center_horizontal">
 
     <Space
         android:layout_width="0dp"
         android:layout_height="40dp" />
-    
+
     <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/carouselRecyclerview"/>
-
 
 </LinearLayout>
