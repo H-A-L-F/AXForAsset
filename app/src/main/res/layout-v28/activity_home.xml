@@ -16,8 +16,12 @@
 
     <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:id="@+id/carouselRecyclerview"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="80dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -25,5 +29,18 @@
         android:text="@string/tnc_tab"
         android:textSize="24dp"
         android:textFontWeight="700"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tncTl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
 
 </LinearLayout>
