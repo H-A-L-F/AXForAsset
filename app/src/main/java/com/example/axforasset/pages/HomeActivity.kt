@@ -11,6 +11,8 @@ import com.example.axforasset.databinding.ActivityHomeBinding
 import com.example.axforasset.models.BannerModel
 import com.example.axforasset.parcel.User
 import com.example.axforasset.utils.BannerAdapter
+import com.example.axforasset.utils.ViewPagerAdapter
+import com.google.android.material.tabs.TabLayoutMediator
 
 class HomeActivity : AppCompatActivity() {
 
@@ -37,6 +39,23 @@ class HomeActivity : AppCompatActivity() {
             set3DItem(true)
             setAlpha(true)
             setInfinite(true)
+        }
+
+        val tabLayout = binding.tncTl
+        val viewPager2 = binding.tncVp
+
+        val vpAdapter = ViewPagerAdapter(supportFragmentManager, lifecycle)
+
+        viewPager2?.adapter = vpAdapter
+        TabLayoutMediator(tabLayout!!, viewPager2!!) { tab, position ->
+            when(position) {
+                0 -> {
+                    tab.text = "Terms"
+                }
+                1 -> {
+                    tab.text = "Conditions"
+                }
+            }
         }
     }
 
