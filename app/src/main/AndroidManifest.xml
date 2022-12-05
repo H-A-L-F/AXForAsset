@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AXForAsset">
         <activity
+            android:name=".pages.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.ItemDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.ItemActivity"
+            android:exported="false" />
+        <activity
             android:name=".pages.HomeActivity"
             android:exported="false" />
         <activity
@@ -23,7 +32,7 @@
         </activity>
         <activity
             android:name=".pages.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
