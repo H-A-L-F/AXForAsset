@@ -19,8 +19,8 @@ Halaman Utama
 
 Halaman Item
 •	Menu utama, prof, logout	-> Menu biasa						[v]
-•	Repeater					-> Assets							[]
-•	Btn ke halaman detail		-> [Store variable] [Pindah halaman]	[]
+•	Repeater					-> Assets							[v]
+•	Btn ke halaman detail		-> [Store variable] [Pindah halaman]	[v]
 
 Halaman Detail
 •	Form dengan 2 komponen	-> Email (utk send asset), Payment method (Visa, Master card, paypal)

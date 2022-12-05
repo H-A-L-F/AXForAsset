@@ -18,13 +18,14 @@ import com.google.android.material.tabs.TabLayoutMediator
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
+    private lateinit var user: User
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val user: User = intent.getParcelableExtra("user")!!
+        user = intent.getParcelableExtra("user")!!
 
         supportActionBar?.title = "Hi, " + user.username
 
@@ -69,14 +70,17 @@ class HomeActivity : AppCompatActivity() {
         when(item.itemId) {
             R.id.profileMenu -> {
                 intent = Intent(this, ProfileActivity::class.java)
+                intent.putExtra("user", user)
                 startActivity(intent)
             }
             R.id.itemMenu -> {
                 intent = Intent(this, ItemActivity::class.java)
+                intent.putExtra("user", user)
                 startActivity(intent)
             }
             R.id.logoutMenu -> {
                 intent = Intent(this, LoginActivity::class.java)
+                intent.putExtra("user", user)
                 startActivity(intent)
             }
         }

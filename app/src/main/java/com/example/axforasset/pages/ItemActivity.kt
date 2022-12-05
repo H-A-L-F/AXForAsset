@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.axforasset.R
 import com.example.axforasset.databinding.ActivityItemBinding
 import com.example.axforasset.models.Item
+import com.example.axforasset.parcel.User
 import com.example.axforasset.utils.ItemRvAdapter
 import com.example.axforasset.utils.RecyclerViewInterface
 
@@ -18,11 +19,14 @@ class ItemActivity : AppCompatActivity(), RecyclerViewInterface {
     private lateinit var binding: ActivityItemBinding
     private lateinit var items: ArrayList<Item>
     private lateinit var itemRvAdapter: ItemRvAdapter
+    private lateinit var user: User
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityItemBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        user = intent.getParcelableExtra("user")!!
 
         binding.itemRv.layoutManager = LinearLayoutManager(this)
         binding.itemRv.setHasFixedSize(true)
@@ -49,14 +53,17 @@ class ItemActivity : AppCompatActivity(), RecyclerViewInterface {
         when(item.itemId) {
             R.id.profileMenu -> {
                 intent = Intent(this, ProfileActivity::class.java)
+                intent.putExtra("user", user)
                 startActivity(intent)
             }
             R.id.homeMenu -> {
                 intent = Intent(this, HomeActivity::class.java)
+                intent.putExtra("user", user)
                 startActivity(intent)
             }
             R.id.logoutMenu -> {
                 intent = Intent(this, LoginActivity::class.java)
+                intent.putExtra("user", user)
                 startActivity(intent)
             }
         }
@@ -73,6 +80,7 @@ class ItemActivity : AppCompatActivity(), RecyclerViewInterface {
 
         intent = Intent(this, ItemDetailActivity::class.java)
         intent.putExtra("item", item)
+        intent.putExtra("user", user)
         startActivity(intent)
     }
 }
