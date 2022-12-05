@@ -8,14 +8,13 @@
     tools:context=".pages.ItemActivity"
     android:orientation="vertical"
     android:gravity="center"
-    android:paddingVertical="20dp"
+    android:paddingTop="20dp"
     android:paddingHorizontal="40dp">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/itemRv"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
