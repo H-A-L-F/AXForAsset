@@ -18,7 +18,7 @@ Halaman Utama
 •	Welcome message			-> Welcome, username	[v]
 
 Halaman Item
-•	Menu utama, prof, logout	-> Menu biasa						[]
+•	Menu utama, prof, logout	-> Menu biasa						[v]
 •	Repeater					-> Assets							[]
 •	Btn ke halaman detail		-> [Store variable] [Pindah halaman]	[]
 
@@ -29,7 +29,7 @@ Halaman Detail
 •	Back btn ke halaman utama	-> Purchase [Mousedown]	[]
 
 Halaman Profile
-•	Menu item, prof, logout	-> Menu biasa			[]
+•	Menu item, prof, logout	-> Menu biasa			[v]
 
 Color palette:
 •	#393E46
