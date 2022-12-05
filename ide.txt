@@ -8,13 +8,13 @@ Halaman Login:
 •	1 buah Text Field; terdapat validasi wajib diisi.		-> username					[v]
 •	1 buah Password Field; terdapat validasi wajib diisi.	-> password					[v]
 •	1 buah Button.										-> login						[v]
-•	1 buah validasi advanced (length, alphanumeric, dsb). 	-> validasi length pass >= 8	[]
+•	1 buah validasi advanced (length, alphanumeric, dsb). 	-> validasi length pass >= 8	[v]
 •	Menyimpan data user untuk digunakan pada halaman lain. -> username					[v]
 
 Halaman Utama
 •	Menu item, prof, logout	-> [Flyout]			[v]
 •	Tab 						-> Terms, Conditions	[]
-•	Image carousel			-> Asset banner		[]
+•	Image carousel			-> Asset banner		[v]
 •	Welcome message			-> Welcome, username	[v]
 
 Halaman Item
