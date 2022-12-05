@@ -64,6 +64,15 @@ class ItemActivity : AppCompatActivity(), RecyclerViewInterface {
     }
 
     override fun onItemClick(position: Int) {
-        TODO("Not yet implemented")
+        val curr = items[position]
+        val image = curr.image
+        val title = curr.title
+        val desc = curr.desc
+
+        val item: com.example.axforasset.parcel.Item = com.example.axforasset.parcel.Item(image, title, desc)
+
+        intent = Intent(this, ItemDetailActivity::class.java)
+        intent.putExtra("item", item)
+        startActivity(intent)
     }
 }
