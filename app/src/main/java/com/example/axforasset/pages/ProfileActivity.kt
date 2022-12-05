@@ -21,7 +21,10 @@ class ProfileActivity : AppCompatActivity() {
 
         user = intent.getParcelableExtra("user")!!
 
-        
+        binding.apply {
+            ("Hi, " + user.username).also { unameTitleTv.text = it }
+            (user.username + "@gmail.com").also { emailTv.text = it }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

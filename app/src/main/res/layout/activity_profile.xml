@@ -17,6 +17,7 @@
         android:background="@drawable/primary_rounded_corner">
 
         <TextView
+            android:id="@+id/unameTitleTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/unameHint"
@@ -43,6 +44,7 @@
                 android:layout_height="0dp" />
 
             <TextView
+                android:id="@+id/emailTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/unameHint"
@@ -70,6 +72,7 @@
                 android:layout_height="0dp" />
 
             <TextView
+                android:id="@+id/workTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/work"
@@ -97,6 +100,7 @@
                 android:layout_height="0dp" />
 
             <TextView
+                android:id="@+id/locationTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/location"
@@ -124,6 +128,7 @@
                 android:layout_height="0dp" />
 
             <TextView
+                android:id="@+id/mobileTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/mobile"
