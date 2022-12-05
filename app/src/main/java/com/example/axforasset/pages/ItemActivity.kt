@@ -13,5 +13,7 @@ class ItemActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityItemBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
     }
 }

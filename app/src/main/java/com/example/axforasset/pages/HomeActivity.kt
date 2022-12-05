@@ -1,5 +1,6 @@
 package com.example.axforasset.pages
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
@@ -64,7 +65,21 @@ class HomeActivity : AppCompatActivity() {
         return true
     }
 
-    override fun onContextItemSelected(item: MenuItem): Boolean {
-        return super.onContextItemSelected(item)
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId) {
+            R.id.profileMenu -> {
+                intent = Intent(this, ProfileActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.itemMenu -> {
+                intent = Intent(this, ItemActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.logoutMenu -> {
+                intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
