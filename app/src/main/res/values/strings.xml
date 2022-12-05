@@ -10,4 +10,10 @@
     <string name="tnc_tab">Terms &amp; Conditions</string>
     <string name="terms">The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves.</string>
     <string name="conditions">We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.</string>
+
+    <string name="item_img">Item image</string>
+    <string name="item_title">Cozy Farm</string>
+    <string name="item_desc">Planning to start a Project where you can take care of cute Animals, build a Cozy Town and harvest your own Produce? </string>
+    <string name="item_btn">Purchase</string>
+
 </resources>
