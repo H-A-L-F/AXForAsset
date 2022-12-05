@@ -22,5 +22,9 @@
         <item>Master</item>
         <item>Paypal</item>
     </string-array>
+    
+    <string name="work">Bina Nusanatara GameDevelopment</string>
+    <string name="location">Purple Avenue no.28</string>
+    <string name="mobile">089657819022</string>
 
 </resources>
