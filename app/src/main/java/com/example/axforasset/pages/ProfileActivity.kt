@@ -7,15 +7,21 @@ import android.view.Menu
 import android.view.MenuItem
 import com.example.axforasset.R
 import com.example.axforasset.databinding.ActivityProfileBinding
+import com.example.axforasset.parcel.User
 
 class ProfileActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityProfileBinding
+    private lateinit var user: User
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        user = intent.getParcelableExtra("user")!!
+
+        
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -27,14 +33,17 @@ class ProfileActivity : AppCompatActivity() {
         when(item.itemId) {
             R.id.itemMenu -> {
                 intent = Intent(this, ItemActivity::class.java)
+                intent.putExtra("user", user)
                 startActivity(intent)
             }
             R.id.homeMenu -> {
                 intent = Intent(this, HomeActivity::class.java)
+                intent.putExtra("user", user)
                 startActivity(intent)
             }
             R.id.logoutMenu -> {
                 intent = Intent(this, LoginActivity::class.java)
+                intent.putExtra("user", user)
                 startActivity(intent)
             }
         }
