@@ -14,19 +14,21 @@ Halaman Login:
 Halaman Utama
 •	Menu item, prof, logout	-> [Flyout]			[v]
 •	Tab 						-> Terms, Conditions	[v]
-•	Image carousel			-> Asset banner		[v]
+•	Image carousel			-> Asset banner		[x]
 •	Welcome message			-> Welcome, username	[v]
 
 Halaman Item
 •	Menu utama, prof, logout	-> Menu biasa						[v]
 •	Repeater					-> Assets							[v]
 •	Btn ke halaman detail		-> [Store variable] [Pindah halaman]	[v]
+-   Purchase ganti jd detail trs onclicknya samain
 
 Halaman Detail
 •	Form dengan 2 komponen	-> Email (utk send asset), Payment method (Visa, Master card, paypal)
 •	1 buah validasi.			-> Email must be filled	[v]
 •	Dialog err message		-> Kalo validasi false	[v]
 •	Back btn ke halaman utama	-> Purchase [Mousedown]	[v]
+-   Dokumentasi, show gambar title desc
 
 Halaman Profile
 •	Menu item, prof, logout	-> Menu biasa			[v]

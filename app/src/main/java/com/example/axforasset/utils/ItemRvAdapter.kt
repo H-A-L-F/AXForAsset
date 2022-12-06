@@ -17,6 +17,12 @@ class ItemRvAdapter(private val items : ArrayList<Item>, private val recyclerVie
                     recyclerViewInterface.onItemClick(bindingAdapterPosition)
                 }
             }
+
+            binding.itemBtn.setOnClickListener {
+                if(bindingAdapterPosition != RecyclerView.NO_POSITION) {
+                    recyclerViewInterface.onItemClick(bindingAdapterPosition)
+                }
+            }
         }
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

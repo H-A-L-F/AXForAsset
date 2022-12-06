@@ -16,6 +16,7 @@
     <string name="item_title">Cozy Farm</string>
     <string name="item_desc">Planning to start a Project where you can take care of cute Animals, build a Cozy Town and harvest your own Produce? </string>
     <string name="item_btn">Purchase</string>
+    <string name="item_detail">Detail</string>
 
     <string-array name="payments">
         <item>Visa</item>
