@@ -28,7 +28,7 @@ Halaman Detail
 •	1 buah validasi.			-> Email must be filled	[v]
 •	Dialog err message		-> Kalo validasi false	[v]
 •	Back btn ke halaman utama	-> Purchase [Mousedown]	[v]
--   Dokumentasi, show gambar title desc
+-   Dokumentasi, show gambar title desc				[]
 
 Halaman Profile
 •	Menu item, prof, logout	-> Menu biasa			[v]

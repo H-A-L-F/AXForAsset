@@ -1,12 +1,13 @@
 package com.example.axforasset.pages
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.LifecycleCoroutineScope
+import androidx.lifecycle.lifecycleScope
+import androidx.viewpager2.widget.ViewPager2
 import com.example.axforasset.R
 import com.example.axforasset.databinding.ActivityHomeBinding
 import com.example.axforasset.models.BannerModel
@@ -14,6 +15,7 @@ import com.example.axforasset.parcel.User
 import com.example.axforasset.utils.BannerAdapter
 import com.example.axforasset.utils.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.coroutines.delay
 
 class HomeActivity : AppCompatActivity() {
 
@@ -59,6 +61,28 @@ class HomeActivity : AppCompatActivity() {
                 }
             }
         }.attach()
+
+        viewPager2.autoScroll(
+            lifecycleScope = this.lifecycleScope,
+            interval = 4000L
+        )
+    }
+
+    fun ViewPager2.autoScroll(lifecycleScope: LifecycleCoroutineScope, interval: Long) {
+        lifecycleScope.launchWhenResumed {
+            scrollIndefinitely(interval)
+        }
+    }
+
+    private suspend fun ViewPager2.scrollIndefinitely(interval: Long) {
+        delay(interval)
+        val numberOfItems = adapter?.itemCount ?: 0
+        val lastIndex = if (numberOfItems > 0) numberOfItems - 1 else 0
+        val nextItem = if (currentItem == lastIndex) 0 else currentItem + 1
+
+        setCurrentItem(nextItem, true)
+
+        scrollIndefinitely(interval)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
